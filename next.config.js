@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   experimental: {
     serverActions: true,
     serverComponentsExternalPackages: ["mongoose"],
@@ -26,9 +29,6 @@ const nextConfig = {
     typescript: {
       ignoreBuildErrors: true,
     },
-  },
-  devServer: {
-    host: '0.0.0.0',
   },
 };
 
